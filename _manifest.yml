@@ -1,0 +1,6 @@
+name: "dsa-shortcuts"
+title: "Data Structures & Algorithms Shortcuts"
+description: A simple package for filling in common Data Structure & Algorithms patterns.
+version: 0.1.0
+author: Jon Shaffer
+tags: ["Development"]

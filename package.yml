@@ -1,0 +1,9 @@
+matches:
+  - trigger: ":js.treenode"
+    replace: "function TreeNode(val, left, right) {\nthis.val = val\nthis.left = left\nthis.right = right\n}"
+  - trigger: ":js.bstinorder"
+    replace: "const inorder = (nodes, root) => {\nif (root) {\ninorder(nodes, root.left)\nnodes.push(root.val)\ninorder(nodes, root.right)\n}\nreturn nodes\n}"
+  - trigger: ":js.bstpreorder"
+    replace: "const preorder = (nodes, root) => {\nif (root) {\nnodes.push(root.val)\npreorder(nodes, root.left)\npreorder(nodes, root.right)\n}\nreturn nodes\n}"
+  - trigger: ":js.bstpostorder"
+    replace: "const postorder = (nodes, root) => {\nif (root) {\npostorder(nodes, root.left)\npostorder(nodes, root.right)\nnodes.push(root.val)\n}\nreturn nodes\n}"
